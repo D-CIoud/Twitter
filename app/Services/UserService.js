@@ -8,6 +8,11 @@ class userService {
     static getInfo(User){
         return [User.id, User.username, User.name, User.bio]
     }
+
+    static updateUsername(User,updatedUserName){
+        User.username = updatedUserName
+        return User
+    }
 }
 
 module.exports = userService
